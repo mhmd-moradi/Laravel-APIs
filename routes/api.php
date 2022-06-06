@@ -9,3 +9,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/getpalindrome', [PalindromeController::class, 'palindromeFinder'])->name("palindrome-finder");
+
