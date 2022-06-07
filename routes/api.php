@@ -15,3 +15,4 @@ Route::get('/getpalindrome', [PalindromeController::class, 'palindromeFinder'])-
 Route::get('/getseconds', [TimeCalculationController::class, 'secondsCalculators'])->name("seconds-calculator");
 Route::get('/getText', [ExternalApiController::class, 'externalApi'])->name("external-api");
 Route::get('/getRecipe', [ExternalApiController::class, 'beer_recipe'])->name("beer-recipe");
+Route::get('/getGroups', [StudentsController::class, 'groupsGenerator'])->name("groups-generator");
